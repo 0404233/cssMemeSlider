@@ -109,3 +109,27 @@ body * {
     background-color: greenyellow;
 }
 
+@media(min-width: 1060px) {
+    .button.first {
+        margin: 1% 0 0 90%;
+    }
+}
+
+@media(max-width: 640px) {
+    .button.first {
+        margin: 3% 0 0 42%;
+    }
+
+    .text {
+        font-size: 1em;
+        height: 15%;
+        width: 95%;
+        margin: 10% 0 0 0;
+    }
+}
+
+@media(max-width: 450px) {
+    .button.first {
+        margin: 3% 0 0 35%;
+    }
+}
