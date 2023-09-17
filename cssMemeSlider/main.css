@@ -22,11 +22,10 @@ body * {
     width: 80%;
     height: 80vh;
     overflow: hidden;
-    border: 1px solid greenyellow;
+    border: 0.2rem solid greenyellow;
 }
 
 .slider {
-    display: flex;
     height: 100%;
     flex-direction: column;
 }
@@ -42,21 +41,11 @@ body * {
     transition: all 0.3s ease;
 }
 
-.text-content {
-    display: inline;
+.text {
+    font-size: 1.25em;
     height: 15%;
     width: 50%;
-    background-color: greenyellow;
-    overflow: hidden;
-}
-
-
-.text-content * {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+    margin: 1% 0 0 0;
 }
 
 .slide {
@@ -70,16 +59,22 @@ body * {
 }
 
 .button {
-    display: inline;
+    display: inline-block;
     margin: 0;
-    width: 2rem;
-    height: 2rem;
+    width: 1rem;
+    height: 1rem;
+    border: 0.1rem solid greenyellow;
     border-radius: 50%;
-    background-color: red;
+    background-color: #8a8787;
+    cursor: pointer;
+}
+
+.button.first {
+    margin: 1% 0 0 84%;
 }
 
 .button:hover {
-    background-color: #fff;
+    background-color: greenyellow;
 }
 
 #b1:checked ~ .slides-content {
@@ -98,37 +93,19 @@ body * {
     margin-left: -300%;
 }
 
-
-#b1:checked ~ .text.first {
-    margin-left: 0;
-}
-
-#b2:checked ~ .text.first {
-    margin-left: -100%;
-}
-
-#b3:checked ~ .text.first {
-    margin-left: -200%;
-}
-
-#b4:checked ~ .text.first {
-    margin-left: -300%;
-}
-
-
 #b1:checked ~ .button.first {
-    background-color: aqua;
+    background-color: greenyellow;
 }
 
 #b2:checked ~ .button.second {
-    background-color: aqua;
+    background-color: greenyellow;
 }
 
 #b3:checked ~ .button.third {
-    background-color: aqua;
+    background-color: greenyellow;
 }
 
 #b4:checked ~ .button.fourth {
-    background-color: aqua;
+    background-color: greenyellow;
 }
 
